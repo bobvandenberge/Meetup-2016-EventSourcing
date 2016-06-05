@@ -4,7 +4,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
 		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="7.44428in" height="4.60014in"
 		viewBox="0 0 535.988 331.21" xml:space="preserve" color-interpolation-filters="sRGB" class="st7">
-	<v:documentProperties v:langID="1043" v:metric="true" v:viewMarkup="false"/>
+	<v:documentProperties v:langID="1043" v:viewMarkup="false"/>
 
 	<style type="text/css">
 	<![CDATA[
@@ -27,7 +27,7 @@
 		<v:layer v:name="Flow Segment" v:index="2"/>
 		<g id="shape13-1" v:mID="13" v:groupContext="shape" v:layerMember="0" transform="translate(36.9704,-18.2202)">
 			<title>Process</title>
-			<desc>Rekening aangemaakt</desc>
+			<desc>Account created</desc>
 			<v:custProps>
 				<v:cp v:nameU="ProcessNumber" v:lbl="Process Number" v:prompt="" v:type="2" v:format="" v:sortKey=""
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0" v:val="VT0(0):26"/>
@@ -61,7 +61,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 			<v:textRect cx="101.639" cy="312.362" width="203.28" height="37.6959"/>
 			<rect x="0" y="293.514" width="203.279" height="37.6959" class="st1"/>
-			<text x="38.87" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Rekening aangemaakt</text>		</g>
+			<text x="54.95" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Account created</text>		</g>
 		<g id="shape19-4" v:mID="19" v:groupContext="shape" transform="translate(342.669,19.024) rotate(90)">
 			<title>Simple Arrow</title>
 			<desc>TIME</desc>
@@ -76,7 +76,7 @@
 			<text x="-157.28" y="-328.21" transform="rotate(180)" class="st3" v:langID="1043"><v:paragraph v:horizAlign="1"/><v:tabList/>TIME</text>		</g>
 		<g id="shape20-7" v:mID="20" v:groupContext="shape" v:layerMember="0" transform="translate(36.9704,-60.9702)">
 			<title>Process.20</title>
-			<desc>Bedrag gestort</desc>
+			<desc>Money deposited</desc>
 			<v:custProps>
 				<v:cp v:nameU="ProcessNumber" v:lbl="Process Number" v:prompt="" v:type="2" v:format="" v:sortKey=""
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0" v:val="VT0(0):26"/>
@@ -110,10 +110,10 @@
 			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 			<v:textRect cx="101.639" cy="312.362" width="203.28" height="37.6959"/>
 			<rect x="0" y="293.514" width="203.279" height="37.6959" class="st1"/>
-			<text x="59.66" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Bedrag gestort</text>		</g>
+			<text x="51.67" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Money deposited</text>		</g>
 		<g id="shape21-10" v:mID="21" v:groupContext="shape" v:layerMember="0" transform="translate(36.9704,-103.72)">
 			<title>Process.21</title>
-			<desc>Rente ontvangen</desc>
+			<desc>Interest received</desc>
 			<v:custProps>
 				<v:cp v:nameU="ProcessNumber" v:lbl="Process Number" v:prompt="" v:type="2" v:format="" v:sortKey=""
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0" v:val="VT0(0):26"/>
@@ -147,10 +147,10 @@
 			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 			<v:textRect cx="101.639" cy="312.362" width="203.28" height="37.6959"/>
 			<rect x="0" y="293.514" width="203.279" height="37.6959" class="st1"/>
-			<text x="52.91" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Rente ontvangen</text>		</g>
+			<text x="53.49" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Interest received</text>		</g>
 		<g id="shape22-13" v:mID="22" v:groupContext="shape" v:layerMember="0" transform="translate(36.9704,-146.47)">
 			<title>Process.22</title>
-			<desc>Bedrag afgeschreven</desc>
+			<desc>Money withdrawn</desc>
 			<v:custProps>
 				<v:cp v:nameU="ProcessNumber" v:lbl="Process Number" v:prompt="" v:type="2" v:format="" v:sortKey=""
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0" v:val="VT0(0):26"/>
@@ -184,10 +184,10 @@
 			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 			<v:textRect cx="101.639" cy="312.362" width="203.28" height="37.6959"/>
 			<rect x="0" y="293.514" width="203.279" height="37.6959" class="st4"/>
-			<text x="42.11" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Bedrag afgeschreven</text>		</g>
+			<text x="49.27" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Money withdrawn</text>		</g>
 		<g id="shape23-16" v:mID="23" v:groupContext="shape" v:layerMember="0" transform="translate(36.9704,-189.22)">
 			<title>Process.23</title>
-			<desc>Rente ontvangen</desc>
+			<desc>Interest received</desc>
 			<v:custProps>
 				<v:cp v:nameU="ProcessNumber" v:lbl="Process Number" v:prompt="" v:type="2" v:format="" v:sortKey=""
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0" v:val="VT0(0):26"/>
@@ -221,10 +221,10 @@
 			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 			<v:textRect cx="101.639" cy="312.362" width="203.28" height="37.6959"/>
 			<rect x="0" y="293.514" width="203.279" height="37.6959" class="st1"/>
-			<text x="52.91" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Rente ontvangen</text>		</g>
+			<text x="53.49" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Interest received</text>		</g>
 		<g id="shape24-19" v:mID="24" v:groupContext="shape" v:layerMember="0" transform="translate(36.9704,-231.97)">
 			<title>Process.24</title>
-			<desc>Rente ontvangen</desc>
+			<desc>Interest received</desc>
 			<v:custProps>
 				<v:cp v:nameU="ProcessNumber" v:lbl="Process Number" v:prompt="" v:type="2" v:format="" v:sortKey=""
 						v:invis="false" v:ask="false" v:langID="1033" v:cal="0" v:val="VT0(0):26"/>
@@ -258,7 +258,7 @@
 			<v:textBlock v:margins="rect(2,2,2,2)" v:tabSpace="42.5197"/>
 			<v:textRect cx="101.639" cy="312.362" width="203.28" height="37.6959"/>
 			<rect x="0" y="293.514" width="203.279" height="37.6959" class="st1"/>
-			<text x="52.91" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Rente ontvangen</text>		</g>
+			<text x="53.49" y="316.56" class="st2" v:langID="1033"><v:paragraph v:horizAlign="1"/><v:tabList/>Interest received</text>		</g>
 		<g id="shape25-22" v:mID="25" v:groupContext="shape" v:layerMember="0" transform="translate(332.589,-16.3842)">
 			<title>Process.25</title>
 			<desc>Rekening aangemaakt</desc>

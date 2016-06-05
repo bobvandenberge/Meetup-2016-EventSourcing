@@ -70,7 +70,7 @@
 			<div class="slides">
 
                 <section>
-                    <h2>Event Sourcing </h2>
+                    <h2>Event Sourcing 101</h2>
                     <p><img src="img/webscale.png" style="height:450px;"/></p>
                     <footer style="padding-top:25px;">
                         <small>Bob van den Berge</small>
@@ -78,13 +78,28 @@
                 </section>
 
                 <section>
-                    <h2>Doel</h2>
-                    <p>Concept 'Event Sourcing' helder</p>
+                    <h2>About me</h2>
+                    <div class="left" >
+                        <img src="img/profielfoto.jpg" style="height: 300px;"/>
+                    </div>
+                    <div class="right">
+                        <ul style="padding-top: 80px;">
+                            <li>Bob van den Berge</li>
+                            <li>Software Engineer</li>
+                            <li>Java/Scala/C#</li>
+                            <li>Passionate about architecture</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Main goal</h2>
+                    <p>Clear view of Event Sourcing</p>
                 </section>
 
                 <section>
                     <section>
-                        <h2>Wat is Event Sourcing?</h2>
+                        <h2>What is Event Sourcing?</h2>
                         <blockquote class="fragment" data-fragment-index="0">Using an object's <strong>history</strong> to reconstitute its <strong>state</strong></blockquote>
                         <aside class="notes">
                             <ul>
@@ -134,11 +149,11 @@
 
     {
         'user_id': 3,
-        'type': 'ArtikelToegevoegd',
-        'timestamp': '<script type="text/javascript">document.write(Date.now());</script>',
+        'type': 'LineItemAdded',
         'data':
             {
-                'artikel': 'Toetsenbord'
+                'lineItem': 'Keyboard',
+                'timestamp': '<script type="text/javascript">document.write(Date.now());</script>',
             }
     }
                             </pre>
@@ -162,12 +177,12 @@
 
                     <section>
                         <h2>Immutability</h2>
-                        <p>Geen update/delete</p>
+                        <p>No update/delete</p>
                         <ul>
-                            <li class="fragment" data-fragment-index="0">Performance door caching</li>
+                            <li class="fragment" data-fragment-index="0">Performance by caching</li>
                             <li class="fragment" data-fragment-index="1">Audit logging</li>
-                            <li class="fragment" data-fragment-index="2">Simple backups</li>
-                            <li class="fragment" data-fragment-index="3">Bescherming tegen media decay/bit rot</li>
+                            <li class="fragment" data-fragment-index="2">Simpler/Easier backups</li>
+                            <li class="fragment" data-fragment-index="3">Protection against media decay/bit rot</li>
                             <li class="fragment" data-fragment-index="4">Disk space</li>
                         </ul>
                         <aside class="notes">
@@ -183,7 +198,7 @@
 
                     <section data-transition="slide-in none">
                         <h2>Compensating transaction</h2>
-                        <p>Wat als je iets verkeerd doet?</p>
+                        <p>What if you made a mistake?</p>
                         <img src="img/CT/Compensating%20Transactions%20V1.svg"/>
                     </section>
 
@@ -255,11 +270,6 @@
 
                     <section data-transition="none">
                         <h2>Projections</h2>
-                        <img src="img/replay/Step%205.svg" style="width:100%;"/>
-                    </section>
-
-                    <section data-transition="none">
-                        <h2>Projections</h2>
                         <img src="img/replay/Step%205.1.svg" style="width:100%;"/>
                     </section>
 
@@ -271,6 +281,11 @@
                     <section data-transition="none">
                         <h2>Projections</h2>
                         <img src="img/replay/Step%205.3.svg" style="width:100%;"/>
+                    </section>
+
+                    <section data-transition="none">
+                        <h2>Projections</h2>
+                        <img src="img/replay/Step%205.svg" style="width:100%;"/>
                     </section>
 
                     <section data-transition="none">
@@ -316,7 +331,7 @@
                     </section>
 
                     <section>
-                        <h2>Wat is het niet?</h2>
+                        <h2>What Event Sourcing is not</h2>
                         <ul>
                             <li>Holy grail</li>
                             <li>Top level architecture</li>
@@ -325,13 +340,13 @@
                 </section>
 
                 <section>
-                    <h1>Voordelen</h1>
+                    <h1>Advantages</h1>
                     <ul>
-                        <li class="fragment" data-fragment-index="0">Lijst van immutable events</li>
-                        <li class="fragment" data-fragment-index="1">Realtime BI</li>
+                        <li class="fragment" data-fragment-index="0">List of immutable events</li>
+                        <li class="fragment" data-fragment-index="1">Realtime Business Intelligence</li>
                         <li class="fragment" data-fragment-index="2">Debugability/Testability</li>
                         <li class="fragment" data-fragment-index="3">Performance (append only)</li>
-                        <li class="fragment" data-fragment-index="4">Geen object <-> relational database mappings</li>
+                        <li class="fragment" data-fragment-index="4">No Object <-> relational database mappings</li>
                         <li class="fragment" data-fragment-index="5">Scalable (read models)</li>
                         <li class="fragment" data-fragment-index="6">Temporal queries</li>
                         <li class="fragment" data-fragment-index="7">Selective/Occassional synchronisation</li>
@@ -339,10 +354,10 @@
                 </section>
 
                 <section>
-                    <h1>Nadelen</h1>
+                    <h1>Disadvantages</h1>
                     <ul style="padding-bottom:280px;">
-                        <li class="fragment" data-fragment-index="0">Complex</li>
-                        <li class="fragment" data-fragment-index="1">Event log groeit snel</li>
+                        <li class="fragment" data-fragment-index="0">Complex (from a requirements perspective)</li>
+                        <li class="fragment" data-fragment-index="1">Event log grows fast</li>
                     </ul>
                     <aside class="notes">
                         <ul>
@@ -353,31 +368,36 @@
                 </section>
 
                 <section>
+                    <h1>Thanks!</h1>
+                    <p>Time for questions!</p>
+                </section>
+
+               <section>
                     <section>
                         <h1>Patterns</h1>
-                        <p class="fragment" data-fragment-index="0">Alleen gebruiken als noodzakelijk!</p>
+                        <p class="fragment" data-fragment-index="0">Only use strictly necessary!</p>
                     </section>
 
                     <section data-transition="slide-in none">
-                        <h2>Snapshotting</h2>
+                        <h2>Snapshots</h2>
                         <img src="img/Snapshotting%201.svg" />
                     </section>
 
                     <section data-transition="none slide-out">
-                        <h2>Snapshotting</h2>
+                        <h2>Snapshots</h2>
                         <img src="img/Snapshotting%202.svg" />
                     </section>
 
                     <section data-transition="slide-in none">
                         <h2 style="margin: 0;">Read models</h2>
                         <p style="margin:0;">Optimized query handling</p>
-                        <img class="fragment" data-fragment-index="0" src="img/Readmodels%20V1.svg" />
+                        <img class="fragment" data-fragment-index="0" src="img/readmodels/Readmodels%20V1.svg" />
                     </section>
 
                     <section data-transition="none slide-out">
                         <h2 style="margin: 0;">Read models</h2>
                         <p style="margin:0;">Optimized query handling</p>
-                        <img src="img/Readmodels%20V2.svg" />
+                        <img src="img/readmodels/Readmodels%20V2.svg" />
                         <aside class="notes">
                             <ul>
                                 <li>Immediate vs Eventual Consistency</li>
@@ -392,7 +412,7 @@
                     <section data-transition="none">
                         <h2 style="margin: 0;">Read models</h2>
                         <p style="margin:0;">Server driven subscription</p>
-                        <img src="img/Readmodels%20V3.svg" />
+                        <img src="img/readmodels/Readmodels%20V3.svg" />
                         <aside class="notes">
                             <ul>
                                 <li>2 problems (control channel, replay)</li>
@@ -404,7 +424,7 @@
                     <section data-transition="none">
                         <h2 style="margin: 0;">Read models</h2>
                         <p style="margin:0;">Server driven subscription</p>
-                        <img src="img/Readmodels%20V4.svg" />
+                        <img src="img/readmodels/Readmodels%20V4.svg" />
                         <aside class="notes">
                             <ul>
                                 <li>2 problems (control channel, replay)</li>
@@ -416,7 +436,7 @@
                     <section data-transition="none slide-out">
                         <h2 style="margin: 0;">Read models</h2>
                         <p style="margin:0;">Consumer driven subscription</p>
-                        <img src="img/Readmodels%20V2.svg" />
+                        <img src="img/readmodels/Readmodels%20V2.svg" />
                         <aside class="notes">
                             <ul>
                                 <li>ATOM: Where now, where is first</li>
@@ -435,10 +455,9 @@
 
     {
         'user_id': 3,
-        'type': 'ArtikelToegevoegd',
-        'timestamp': '<script type="text/javascript">document.write(Date.now());</script>',
+        'type': 'LineItemAdded',
         'data': {
-            'artikel': 'Toetsenbord'
+            'lineItem': 'Keyboard'
         }
     }
                             </pre>
@@ -448,11 +467,10 @@
 
     {
         'user_id': 3,
-        'type': 'ArtikelToegevoegd',
+        'type': 'LineItemAdded',
         'version': 2,
-        'timestamp': '<script type="text/javascript">document.write(Date.now());</script>',
         'data': {
-            'artikel': 'Toetsenbord',
+            'lineItem': 'Keyboard',
             'platform': 'Desktop'
         }
     }
@@ -572,50 +590,8 @@
                     </section>
                 </section>
 
-                <section>
-                    <h2>Wanneer Event Sourcing?</h2>
-                    <ul>
-                        <li>Rich domain models</li>
-                        <li>Non-CRUD behaviour</li>
-                        <li>Auditing</li>
-                        <li>Monitoring/ Realtime BI</li>
-                        <li>Domain is inherently event driven</li>
-                    </ul>
-                </section>
+            </div>
 
-                <section>
-                    <h2>Producten</h2>
-                    <ul>
-                        <li>GetEventStore (by Greg Young)</li>
-                        <li>NEventStore</li>
-                        <li>Kafka</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Future</h2>
-                    <ul>
-                        <li>Code changes?</li>
-                        <li>N-temporal queries</li>
-                        <li>Client side Event Sourcing
-                            <ul>
-                                <li>Occasionally connected system</li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <aside class="notes">
-                        <ul>
-                        <li>Changes: belastingaangifte</li>
-                        <li>N-Temp: jij weet nu wat?</li>
-                        <li>GIT: in Tunnel</li>
-                        </ul>
-                    </aside>
-                </section>
-
-                <section>
-                    <h1>Bedankt!</h1>
-                </section>
-			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
